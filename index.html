@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Hola Mundo Cloud</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        h1 { color: #232f3e; }
+        p { color: #555; font-size: 1.2em; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>¡Hola Mundo Cloud!</h1>
+        <p>Esta es mi primera página web desplegada en Amazon S3.</p>
+        <p>Fecha: <span id="fecha"></span></p>
+    </div>
+    <script>
+        document.getElementById('fecha').innerText = new Date().toLocaleDateString();
+    </script>
+</body>
+</html>
